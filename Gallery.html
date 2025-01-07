@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="Gallery.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <div class="logo1"></div>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="Gallery.html">GALLERY</a></li>
+                    <li><a href="ContactUs.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    
+    <div class="view-image">
+        <img src="Gallery/b1.jpg" alt="">
+        <span>x</span>
+    </div>
+      
+    <div class="image-container">
+        <img src="Gallery/b1.jpg" alt="">
+        <img src="Gallery/b2.jpg" alt="">
+        <img src="Gallery/b3.jpg" alt="">
+        <img src="Gallery/b4.jpg" alt="">
+        <img src="Gallery/b5.jpg" alt="">
+        <img src="Gallery/b6.jpg" alt="">
+        <img src="Gallery/bb1.jpg" alt="">
+        <!-- <img src="Gallery/bb2.jpg" alt=""> -->
+        <img src="Gallery/bb3.jpg" alt="">
+        <img src="Gallery/bb4.jpg" alt="">
+        <img src="Gallery/c1.jpg" alt="">
+        <img src="Gallery/c2.jpg" alt="">
+        <img src="Gallery/cc1.jpg" alt="">
+        <img src="Gallery/cc2.jpg" alt="">
+        <img src="Gallery/cc3.jpg" alt="">
+        <img src="Gallery/f1.jpg" alt="">
+        <img src="Gallery/f2.jpg" alt="">
+        <img src="Gallery/w2.jpg" alt="">
+        <img src="Gallery/w3.jpg" alt="">
+        <img src="Gallery/w4.jpg" alt="">
+        <img src="Gallery/w5.jpg" alt="">
+        <img src="Gallery/w6.jpg" alt="">
+    </div>
+</body>
+<script>
+    let images=document.querySelectorAll(".image-container img");
+    let viewImage=document.querySelector(".view-image");
+    let closebtn =document.querySelector(".view-image span")
+    let fullImage=document.querySelector(".view-image img")
+
+    for(let image of images)
+    {
+        image.addEventListener("click",function(e){
+            console.log(e);
+            viewImage.style.display="flex";
+            fullImage.src=e.target.src;
+        })
+    }
+
+
+    closebtn.addEventListener('click',function(){
+        viewImage.style.display="none";
+        
+    })
+</script>
+</html>

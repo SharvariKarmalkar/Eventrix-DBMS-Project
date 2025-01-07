@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Contact Us</title>
+</head>
+<body>
+    <!----------Header ---------->
+
+    <nav>
+      <a href="index.html" class="logo"><img src="pics/Eventrix.png" alt="Eventrix"></a>
+        <div class="nav-links" id="navLinks">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="Gallery.html">GALLERY</a></li>
+                <li><a href="ContactUs.html">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<section class="form">
+    <div class="container">
+        <form action="">
+            <div class="box">
+            <h2 style="color:aliceblue;text-align: center; text-transform: capitalize;">Get In Touch</h2>
+            
+            <!-- <fieldset > -->
+            <input type="text" required name="name" placeholder="Name">
+            <input type="text" required phone no="phoneno" placeholder="Phone No">
+            <input type="email" required name="email" id="" placeholder="Email">
+            
+                <select required name="eventtype" id="etype" aria-placeholder="Select Your Event">
+                    <option value="">--Select Your Event--</option>
+                    <option value="Birthday">Birthday Party</option>
+                    <option value="Wedding">Wedding</option>
+                    <option value="bachelorate">Bachelorate Party</option>
+                    <option value="corporate Events">Corporate Events</option>
+                    <option value="concerts">Concerts</option>
+                    <option value="farewell">Farewell Party</option>
+                </select>
+            <input type="text" required name="Address" placeholder="Venue">
+            <input type="date" placeholder="Event Date">
+            <input type="time" placeholder="Event Time">
+            <div class="button">
+                <button >Submit</button>
+            </div> 
+        </div>  
+   
+    <!-- </fieldset> -->
+    <!-- <fieldset class="button">
+
+        <button >Submit</button>
+        <button >Delete</button>
+        <button >Update</button>
+    </fieldset>            -->
+    </form>
+</section>
+        
+    
+</body>
+</html>
